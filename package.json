@@ -1,0 +1,41 @@
+{
+  "name": "i18next-google-sheets",
+  "version": "0.1.0",
+  "description": "Simple CLI tool to keep JSON and Google Sheets up-to-date",
+  "main": "dist/index.js",
+  "bin": "bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "build": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrry2/i18next-google-sheets.git"
+  },
+  "keywords": [
+    "i18next",
+    "google-sheets"
+  ],
+  "author": "Takaki Takeuchi <takaki@takeu.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shrry2/i18next-google-sheets/issues"
+  },
+  "homepage": "https://github.com/shrry2/i18next-google-sheets#readme",
+  "dependencies": {
+    "i18next-json-csv-converter": "^0.2.0",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@types/yargs": "^17.0.0",
+    "gts": "^3.1.0",
+    "typescript": "^4.0.3"
+  }
+}
